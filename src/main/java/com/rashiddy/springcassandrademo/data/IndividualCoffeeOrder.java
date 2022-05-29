@@ -3,11 +3,13 @@ package com.rashiddy.springcassandrademo.data;
 import lombok.Builder;
 import lombok.Data;
 
-@Builder
-@Data
-public class TutorialRequest {
+import java.util.UUID;
 
-    private String email;
-    private int age;
+@Data
+@Builder
+public class IndividualCoffeeOrder {
+
+    private UUID id;
     private String name;
+    private String quantity;
 }

@@ -1,14 +1,14 @@
 package com.rashiddy.springcassandrademo.repository;
 
 
-import com.rashiddy.springcassandrademo.models.TutorialTable;
+import com.rashiddy.springcassandrademo.models.CoffeeTypes;
 import org.springframework.data.cassandra.repository.CassandraRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface TutorialsRepository extends CassandraRepository<TutorialTable, String> {
+public interface CoffeeTypesRepository extends CassandraRepository<CoffeeTypes, String> {
 
-    TutorialTable findByEmail(String email);
+    CoffeeTypes findByEmail(String email);
 
 
 }
